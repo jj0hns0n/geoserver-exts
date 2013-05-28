@@ -64,7 +64,6 @@
     <dependency>
       <groupId>com.sleepycat</groupId>
       <artifactId>je</artifactId>
-      <version>4.1.10</version>
     </dependency>
     <dependency>
       <groupId>com.ning</groupId>
@@ -202,6 +201,20 @@
           <version>4.0</version>
         </dependency>
       </dependencies>
+    </profile>
+    <profile>
+      <id>geogit</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.geogit</groupId>
+          <artifactId>geogit-geotools</artifactId>
+          <version>${gg.version}</version>
+          <scope>provided</scope>
+        </dependency>
+      </dependencies>
+      <properties>
+        <gg.version>0.3-SNAPSHOT</gg.version>
+      </properties>
     </profile>
   </profiles>
 
