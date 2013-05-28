@@ -202,20 +202,6 @@
         </dependency>
       </dependencies>
     </profile>
-    <profile>
-      <id>geogit</id>
-      <dependencies>
-        <dependency>
-          <groupId>org.geogit</groupId>
-          <artifactId>geogit-geotools</artifactId>
-          <version>${gg.version}</version>
-          <scope>provided</scope>
-        </dependency>
-      </dependencies>
-      <properties>
-        <gg.version>0.3-SNAPSHOT</gg.version>
-      </properties>
-    </profile>
   </profiles>
 
 </project>
