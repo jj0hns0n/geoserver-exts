@@ -97,6 +97,16 @@
          <artifactId>geogit-geotools</artifactId>
          <version>${gg.version}</version>
        </dependency>
+        <dependency>
+          <groupId>org.geogit</groupId>
+          <artifactId>geogit-web-api</artifactId>
+          <version>0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+          <groupId>org.geogit</groupId>
+          <artifactId>geogit-geoserver</artifactId>
+          <version>0.3-SNAPSHOT</version>
+        </dependency>
      </dependencies>
      <properties>
        <gg.version>0.3-SNAPSHOT</gg.version>
