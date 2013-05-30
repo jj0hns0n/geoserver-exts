@@ -52,6 +52,14 @@
       <id>org.mapfish</id>
       <url>http://dev.mapfish.org/maven/repository</url>
     </repository>
+    <repository>
+      <id>oracle</id>
+      <name>Oracles Maven Repository</name>
+      <url>http://download.oracle.com/maven/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <pluginRepositories>
@@ -191,6 +199,12 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Berkeley DB JE -->
+      <dependency>
+        <groupId>com.sleepycat</groupId>
+        <artifactId>je</artifactId>
+        <version>${bdbje.version}</version>
+      </dependency>
       <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
@@ -474,7 +488,7 @@
   <modules>
     <module>csv</module>
     <module>importer</module>
-    <module>monitor-console</module>
+    <!--module>monitor-console</module-->
     <module>printng</module>
     <module>web</module>
   </modules>
@@ -482,6 +496,7 @@
   <properties>
     <gs.version>2.3-SNAPSHOT</gs.version>
     <gt.version>9-SNAPSHOT</gt.version>
+    <bdbje.version>5.0.58</bdbje.version>
     <spring.version>3.1.1.RELEASE</spring.version>
     <spring.security.version>3.1.0.RELEASE</spring.security.version>
     <jetty.version>6.1.8</jetty.version>
