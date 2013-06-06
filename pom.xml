@@ -51,6 +51,9 @@
     <repository>
       <id>org.mapfish</id>
       <url>http://dev.mapfish.org/maven/repository</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
     </repository>
     <repository>
       <id>oracle</id>
@@ -491,6 +494,7 @@
     <!--module>monitor-console</module-->
     <module>printng</module>
     <module>web</module>
+    <module>gsr</module>
   </modules>
 
   <properties>
